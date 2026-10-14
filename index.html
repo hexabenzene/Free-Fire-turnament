@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Fire Tournament</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>🔥 Free Fire Tournament</h1>
+    <p class="muted">Public leaderboard</p>
+
+    <section class="card">
+      <label for="matchSelect">Match নির্বাচন</label>
+      <select id="matchSelect"></select>
+      <h2 id="matchTitle">Leaderboard</h2>
+      <div id="leaderboard"></div>
+    </section>
+
+    <section class="card">
+      <h2>🔐 Admin Panel</h2>
+      <p class="muted">এই ডেমো ভার্সনে ডেটা এই ব্রাউজারের Local Storage-এ থাকে।</p>
+      <input id="matchName" placeholder="যেমন: 9 PM Match">
+      <button onclick="createMatch()">+ Match তৈরি</button>
+
+      <div id="adminArea"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
